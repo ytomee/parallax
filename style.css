@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    user-select: none;
+    pointer-events: none;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    background-color: #353;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 360px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.fog-7 {
+    position: absolute;
+    width: calc(100vw + 1000px);
+    top: calc(50% + 200px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.mountain-10 {
+    position: absolute;
+    width: 892px;
+    top: calc(50%);
+    left: calc(50% + 130px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.fog-6 {
+    position: absolute;
+    width: calc(100vw + 1000px);
+    top: calc(50% + 285px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.mountain-9 {
+    position: absolute;
+    width: 570px;
+    top: calc(50% + 113px);
+    left: calc(50% - 570px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.mountain-8 {
+    position: absolute;
+    width: 900px;
+    top: calc(50% + 100px);
+    left: calc(50% - 230px);
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+.fog-5 {
+    position: absolute;
+    width: calc(100vw + 1000px);
+    top: calc(50% + 360px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+
+.mountain-7 {
+    position: absolute;
+    width: 538px;
+    top: calc(50% + 83px);
+    left: calc(50% + 370px);
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+.text {
+    z-index: 9;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.text h2 {
+    font-size: 8rem;
+    font-weight: 100;
+}
+
+.text h1 {
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 0.5;
+}
+
+.mountain-6 {
+    position: absolute;
+    width: 408px;
+    top: calc(50% + 30px);
+    left: calc(50% + 750px);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.fog-4 {
+    position: absolute;
+    width: calc(100vw + 1000px);
+    top: calc(50% + 723px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+
+.mountain-5 {
+    position: absolute;
+    width: 755px;
+    top: calc(50% + 300px);
+    left: calc(50% + 120px);
+    transform: translate(-50%, -50%);
+    z-index: 13;
+}
+
+.fog-5 {
+    position: absolute;
+    width: calc(100vw + 1000px);
+    top: calc(50% + 1410px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+.mountain-4 {
+    position: absolute;
+    width: 1000px;
+    top: calc(50% + 306px);
+    left: calc(50% - 500px);
+    transform: translate(-50%, -50%);
+    z-index: 14;
+}
+
+.mountain-3 {
+    position: absolute;
+    width: 538px;
+    top: calc(50% + 196px);
+    left: calc(50% + 800px);
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.mountain-1 {
+    position: absolute;
+    width: 708px;
+    top: calc(50% + 6px);
+    left: calc(50% - 779px);
+    transform: translate(-50%, -50%);
+    z-index: 16;
+}
+
+.mountain-2 {
+    position: absolute;
+    width: 840px;
+    top: calc(50% + 206px);
+    left: calc(50% + 520px);
+    transform: translate(-50%, -50%);
+    z-index: 17;
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 18;
+    top: 0;
+    right: 0;
+    width: 595px;
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 19;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+.fog-1 {
+    position: absolute;
+    width: calc(100vw + 1000px);
+    top: calc(100% - 155px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0) 65%,
+        rgba(0, 0, 0, 0.7)
+    );
+}
+
+.parallax {
+    transition: 0.45s cubic-bezier(.2,.49,.32,.99);
+}
+
+@media (max-width: 1160px) {
+    .text h1 {
+        font-size: 8rem;
+    }
+    .text h2 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .text h1 {
+        font-size: 7rem;
+    }
+    .text h2 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .text h1 {
+        font-size: 6rem;
+    }
+    .text h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .text h1 {
+        font-size: 5rem;
+    }
+    .text h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 610px) {
+    .text h1 {
+        font-size: 4rem;
+    }
+    .text h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 3rem;
+    }
+    .text h2 {
+        font-size: 2rem;
+    }
+}
